@@ -5,8 +5,8 @@
   "main": "scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "beefy scripts/index.js:bundle.js --live --open -- -t [ babelify --presets [ es2015 ] ]",
-    "bundle": "browserify scripts/index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs --compress --mangle -- > bundle.js"
+    "dev": "beefy scripts/index.js:bundle.js --live --open -- -t rollupify -t [ babelify --presets [ es2015 ] ]",
+    "bundle": "browserify scripts/index.js -t rollupify -t [ babelify --presets [ es2015 ] ] | uglifyjs --compress --mangle -- > bundle.js"
   },
   "keywords": [
     "browserify",
@@ -21,6 +21,7 @@
     "babelify": "^7.3.0",
     "beefy": "^2.1.8",
     "browserify": "^13.1.0",
+    "rollupify": "^0.3.4",
     "uglify-js": "^2.7.3",
     "watchify": "^3.7.0"
   },
