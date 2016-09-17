@@ -9,7 +9,7 @@ parser, which is useful for linting some syntax extensions (e.g. async / await).
 ## Preconfigured commands
 
 ```
-# Start a live-reload server that compiles scripts/index.js and and provides it temporarily as bundle.js
+# Start a live-reload server that compiles scripts/index.js and provides it temporarily as bundle.js
 $ npm run dev
 # Compile and mangle scripts/index.js, spit out bundle.js
 $ npm run bundle
